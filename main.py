@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from services.llm_service import call_external_llm
 
 from circuit_breaker import call_llm_with_circuit_breaker
 
